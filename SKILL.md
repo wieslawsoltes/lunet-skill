@@ -8,7 +8,7 @@ description: Build and maintain Lunet static websites with first-class documenta
 Use this skill to deliver Lunet documentation sites and API reference sections with practical, production-ready patterns.
 
 Primary references:
-- `references/major-features/README.md`
+- `references/major-features/00-major-features-index.md`
 - `references/major-features/01-bootstrap-and-site-structure.md`
 - `references/major-features/02-configuration-and-environments.md`
 - `references/major-features/03-content-layouts-markdown-and-includes.md`
@@ -69,7 +69,7 @@ Source-level references (optional, only when Lunet source is available):
 - Run:
 ```bash
 python3 scripts/generate_lunet_references.py \
-  --repo /path/to/lunet \
+  --repo <lunet-repo-path> \
   --output references
 ```
 - This refreshes:

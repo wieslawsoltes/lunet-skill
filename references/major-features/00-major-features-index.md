@@ -1,4 +1,4 @@
-# Major Feature References
+# Major Feature Index
 
 Use these files as targeted playbooks by feature area.
 

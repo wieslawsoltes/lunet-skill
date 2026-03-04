@@ -28,7 +28,7 @@ Default output folder:
 
 ## Minimal Site Layout
 
-Typical generated structure:
+Common site structure after `lunet init` and initial customization:
 
 ```text
 mysite/
@@ -38,10 +38,7 @@ mysite/
   docs/
     readme.md
     menu.yml
-  .lunet/
-    layouts/
-    includes/
-    data/
+  .lunet/            # optional local overrides (layouts/includes/data/assets)
 ```
 
 ## What to Customize First
