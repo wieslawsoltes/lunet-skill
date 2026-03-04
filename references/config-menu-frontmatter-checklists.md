@@ -4,6 +4,7 @@ Use this after opening the matching official docs pages.
 
 ## Required Docs Per Surface
 
+- Prefetched snapshot index: `references/00-prefetch-source-map.md`
 - Default template baseline: https://github.com/lunet-io/templates and https://github.com/lunet-io/templates/blob/main/dist/readme.md
 - `config.scriban`: https://lunet.io/docs/configuration/
 - Front matter/content: https://lunet.io/docs/content-and-frontmatter/

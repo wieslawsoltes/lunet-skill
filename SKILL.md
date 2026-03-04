@@ -8,6 +8,7 @@ description: Configure and troubleshoot Lunet static sites using docs-first work
 Use this skill as a navigation layer to official Lunet documentation, not as a duplicate of the docs.
 
 Core references:
+- `references/00-prefetch-source-map.md`
 - `references/lunet-docs-map.md`
 - `references/default-template-first.md`
 - `references/major-feature-usage-playbooks.md`
@@ -17,6 +18,8 @@ Core references:
 
 - Treat [lunet.io docs](https://lunet.io/docs/) as source of truth.
 - Treat the default template repo ([lunet-io/templates](https://github.com/lunet-io/templates)) as first-choice baseline for layouts/navigation/styles.
+- Use prefetched snapshots in `references/upstream/` first to avoid routine web requests.
+- Only fetch web docs when snapshots are missing/stale, or when the user explicitly asks for latest upstream behavior.
 - Prefer linking users to the exact doc section over re-explaining large blocks of knowledge.
 - Do not rely on local Lunet repository paths in guidance.
 
@@ -36,29 +39,42 @@ Core references:
 - deployment/CI (GitHub Actions)
 - optional: `api.dotnet`
 
-3. Open the matching official docs from `references/lunet-docs-map.md` before proposing changes.
-- Use the smallest set of relevant pages.
-- Quote configuration patterns minimally and adapt to the user’s files.
-- For broad requests, first use the feature matrix in `references/lunet-docs-map.md` to confirm complete coverage.
+3. Load prefetched docs from `references/00-prefetch-source-map.md`.
+- Start with local snapshots under `references/upstream/`.
+- For broad requests, use `references/lunet-docs-map.md` feature matrix to confirm complete coverage.
 
-4. Apply minimal, file-focused edits.
+4. Open official docs links only when needed.
+- Use web fetches as fallback for missing/outdated snapshot content or explicit "latest" requests.
+- Keep citations tied to the canonical URLs from `references/lunet-docs-map.md`.
+
+5. Apply minimal, file-focused edits.
 - Prioritize correctness of:
   - `config.scriban`
   - `menu.yml`
   - front matter blocks (`--- ... ---`)
   - layout/include paths
 
-5. Validate behavior with Lunet commands.
+6. Validate behavior with Lunet commands.
 - Typical checks:
   - `lunet build`
   - `lunet serve`
   - `lunet build --dev` (for environment-sensitive behavior)
 
-6. Run the checklists in `references/config-menu-frontmatter-checklists.md` for touched surfaces.
+7. Run the checklists in `references/config-menu-frontmatter-checklists.md` for touched surfaces.
 
-7. Report outcome with doc anchors.
+8. Report outcome with doc anchors.
 - Mention which doc pages were used.
 - Summarize concrete file changes and how they map to docs guidance.
+
+## Upstream Refresh
+
+Refresh prefetched snapshots when needed:
+
+```bash
+bash scripts/sync-lunet-docs.sh
+```
+
+This updates `references/upstream/` and rewrites the generated manifest in `references/00-prefetch-source-map.md`.
 
 ## Scope Guardrails
 

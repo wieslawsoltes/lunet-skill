@@ -8,6 +8,11 @@ Use the Lunet default template as the baseline before creating custom layout/nav
 - Template overview/readme: https://github.com/lunet-io/templates/blob/main/readme.md
 - Consumer quickstart/customization: https://github.com/lunet-io/templates/blob/main/dist/readme.md
 
+Prefetched local snapshots:
+- `references/upstream/templates/readme.md`
+- `references/upstream/templates/dist/readme.md`
+- `references/upstream/templates/dist/config.scriban`
+
 ## When To Apply
 
 - New docs/static site setup.

@@ -2,6 +2,10 @@
 
 Use these playbooks to select docs and edit points for common, high-value Lunet outcomes.
 
+Prefetch-first rule:
+- Resolve each listed URL via `references/00-prefetch-source-map.md` and open the local snapshot first.
+- Use web URLs directly only when snapshot content is missing/stale or a latest-upstream check is requested.
+
 ## Table of Contents
 
 - [1. Template-First Site Baseline (Required)](#1-template-first-site-baseline-required)

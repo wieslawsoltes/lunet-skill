@@ -5,6 +5,7 @@ Use this map as a routing index to official docs only.
 ## Table of Contents
 
 - [Entry Points](#entry-points)
+- [Prefetch-First Routing](#prefetch-first-routing)
 - [Default Template Baseline](#default-template-baseline)
 - [Core Guides](#core-guides)
 - [All Plugin Pages](#all-plugin-pages)
@@ -18,6 +19,16 @@ Use this map as a routing index to official docs only.
 | Lunet docs home | https://lunet.io/docs/ |
 | User guide landing | https://lunet.io/docs/ |
 | Plugins index | https://lunet.io/docs/plugins/ |
+
+## Prefetch-First Routing
+
+- Snapshot index and canonical URL mapping:
+  - `references/00-prefetch-source-map.md`
+- Local snapshot roots:
+  - `references/upstream/lunet-docs/`
+  - `references/upstream/templates/`
+  - `references/upstream/repos/` (sparse git snapshots used by sync script)
+- Open local snapshots first; use canonical URLs in this map for citations.
 
 ## Default Template Baseline
 
@@ -102,8 +113,9 @@ This matrix maps Lunet's public feature surface to docs and primary configuratio
 
 ## Usage Rules
 
-1. Open the smallest relevant set of official URLs before editing files.
-2. For new or heavily customized sites, evaluate `lunet-io/templates` first before custom layout/menu/theme implementation.
-3. Prefer configuration/file fixes over long conceptual explanations.
-4. Do not rely on local Lunet source checkout paths when giving guidance.
-5. Treat `api.dotnet` as opt-in: only deep-dive when the user asks for API docs work.
+1. Open the smallest relevant set of local prefetched snapshots first (from `references/00-prefetch-source-map.md`).
+2. Use official URLs for canonical linking/citation, and as fallback when snapshot content is missing/stale.
+3. For new or heavily customized sites, evaluate `lunet-io/templates` first before custom layout/menu/theme implementation.
+4. Prefer configuration/file fixes over long conceptual explanations.
+5. Do not rely on local Lunet source checkout paths when giving guidance.
+6. Treat `api.dotnet` as opt-in: only deep-dive when the user asks for API docs work.
