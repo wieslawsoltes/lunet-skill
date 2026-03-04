@@ -1,97 +1,62 @@
 ---
 name: lunet-static-site-docs-and-api-docs
-description: Build and maintain Lunet static websites with first-class documentation and .NET API reference pages. Use when tasks involve `config.scriban`, plugin/module configuration, docs section authoring, menu/layout wiring, `api.dotnet` setup, `xref` linking, or Lunet feature/API lookup for either regular site projects or Lunet source contributions.
+description: Configure and troubleshoot Lunet static sites using docs-first workflows focused on `config.scriban`, content front matter, `menu.yml`, layouts/includes, full plugin configuration, deployment, and build/serve behavior. Use for Lunet site setup and maintenance; handle `api.dotnet` only when the user explicitly asks for API documentation features.
 ---
 
-# Lunet Static Sites and API Docs
+# Lunet Docs-First Site Configuration
 
-Use this skill to deliver Lunet documentation sites and API reference sections with practical, production-ready patterns.
+Use this skill as a navigation layer to official Lunet documentation, not as a duplicate of the docs.
 
-Primary references:
-- `references/major-features/00-major-features-index.md`
-- `references/major-features/01-bootstrap-and-site-structure.md`
-- `references/major-features/02-configuration-and-environments.md`
-- `references/major-features/03-content-layouts-markdown-and-includes.md`
-- `references/major-features/04-data-menus-and-taxonomies.md`
-- `references/major-features/05-resources-bundles-scss-and-minifier.md`
-- `references/major-features/06-search-rss-sitemaps-cards-and-tracking.md`
-- `references/major-features/07-api-dotnet-end-to-end.md`
-- `references/major-features/08-dev-workflow-ci-and-troubleshooting.md`
+Core references:
+- `references/lunet-docs-map.md`
+- `references/major-feature-usage-playbooks.md`
+- `references/config-menu-frontmatter-checklists.md`
 
-Source-level references (optional, only when Lunet source is available):
-- `references/build-and-docs-workflow.md`
-- `references/feature-map.md`
-- `references/public-api-index.md`
+## Working Principle
 
-## Operating Modes
-
-1. Site Project Mode (default)
-- Use this when the user does not have Lunet source cloned and only needs to build a site.
-- Rely on `references/major-features/*.md`.
-- Use `lunet` as an installed .NET tool.
-
-2. Lunet Source Mode (optional)
-- Use this when the user is modifying Lunet itself.
-- Rely on `references/feature-map.md` and `references/public-api-index.md`.
-- Use repository build/test workflow in `references/build-and-docs-workflow.md`.
+- Treat [lunet.io docs](https://lunet.io/docs/) as source of truth.
+- Prefer linking users to the exact doc section over re-explaining large blocks of knowledge.
+- Do not rely on local Lunet repository paths in guidance.
 
 ## Workflow
 
-1. Determine mode first.
-- If task is about creating or editing a Lunet site, stay in Site Project Mode.
-- If task explicitly targets Lunet internals/modules/source files, switch to Source Mode.
+1. Classify the request by area, then pick one playbook from `references/major-feature-usage-playbooks.md`.
+- `config.scriban`
+- page/front matter/content
+- `menu.yml` or navigation
+- layouts/includes/themes
+- plugin configuration (all modules listed in `references/lunet-docs-map.md`)
+- CLI/build/serve/watch behavior
+- deployment/CI (GitHub Actions)
+- optional: `api.dotnet`
 
-2. In Site Project Mode, implement by feature area.
-- Bootstrap and structure: `references/major-features/01-bootstrap-and-site-structure.md`
-- Config/environments: `references/major-features/02-configuration-and-environments.md`
-- Content/layouts/markdown/includes: `references/major-features/03-content-layouts-markdown-and-includes.md`
-- Data/navigation/taxonomies: `references/major-features/04-data-menus-and-taxonomies.md`
-- Asset pipeline: `references/major-features/05-resources-bundles-scss-and-minifier.md`
-- Discovery/SEO features: `references/major-features/06-search-rss-sitemaps-cards-and-tracking.md`
-- .NET API docs: `references/major-features/07-api-dotnet-end-to-end.md`
-- Dev loop/CI/troubleshooting: `references/major-features/08-dev-workflow-ci-and-troubleshooting.md`
+2. Open the matching official docs from `references/lunet-docs-map.md` before proposing changes.
+- Use the smallest set of relevant pages.
+- Quote configuration patterns minimally and adapt to the user’s files.
+- For broad requests, first use the feature matrix in `references/lunet-docs-map.md` to confirm complete coverage.
 
-3. In Source Mode, map behavior to modules and API.
-- Read `references/feature-map.md` for module registration and docs mapping.
-- Read `references/public-api-index.md` and assembly files under `references/api/*.md`.
-- Use `references/build-and-docs-workflow.md` for build/test/site dogfooding commands.
+3. Apply minimal, file-focused edits.
+- Prioritize correctness of:
+  - `config.scriban`
+  - `menu.yml`
+  - front matter blocks (`--- ... ---`)
+  - layout/include paths
 
-4. Keep API docs deterministic.
-- Configure `api.dotnet` with explicit `projects`, `path`, `menu_name`, and `config`.
-- Use `apidocs/*.md` + `uid` for namespace/type/member supplemental docs when needed.
-- Validate generated `/api` page tree and xref links.
+4. Validate behavior with Lunet commands.
+- Typical checks:
+  - `lunet build`
+  - `lunet serve`
+  - `lunet build --dev` (for environment-sensitive behavior)
 
-5. Validate outputs and integration.
-- Run build/serve/watch cycles and verify generated files, menus, links, and feeds.
-- Check environment-specific behavior (dev vs prod) for tracking/minification and related features.
+5. Run the checklists in `references/config-menu-frontmatter-checklists.md` for touched surfaces.
 
-6. Regenerate references only when source/API mapping changed.
-- Run:
-```bash
-python3 scripts/generate_lunet_references.py \
-  --repo <lunet-repo-path> \
-  --output references
-```
-- This refreshes:
-  - `references/feature-map.md`
-  - `references/public-api-index.md`
-  - `references/api/*.md`
-  - `references/api-summary.json`
-  - `references/api/summary.json`
+6. Report outcome with doc anchors.
+- Mention which doc pages were used.
+- Summarize concrete file changes and how they map to docs guidance.
 
-## API and Feature Lookup Patterns
+## Scope Guardrails
 
-- `rg -n "api\\.dotnet|xref|layout_type" .`
-- `rg -n "bundle|scss|minify|resource" .`
-- `rg -n "search|rss|sitemap|cards|tracking" .`
-- `rg -n "SiteObject|SiteRunner|SiteApplication" references/api/*.md`
-- `rg -n "class .*Module|class .*Plugin" src/Lunet.*/*.cs` (Source Mode)
-
-## Execution Rules
-
-- Do not assume a local Lunet source clone unless the task explicitly involves Lunet source code.
-- Prefer Site Project Mode references first; switch to Source Mode only when needed.
-- Keep changes minimal and feature-focused; avoid unrelated refactors.
-- Add or update tests for behavior changes in Source Mode.
-- Keep user-facing documentation in sync with behavior changes.
-- Avoid machine-local paths in generated or committed reference files.
+- Do not default to deep .NET API extraction/reference work.
+- Use `api.dotnet` guidance only when user asks for API documentation generation.
+- Prefer docs-first mapping for configuration and content tasks.
+- Avoid duplicating full Lunet docs text in responses; point to exact pages and apply them.

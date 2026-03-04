@@ -1,4 +1,4 @@
 interface:
-  display_name: "Lunet Static Sites and API Docs"
-  short_description: "Build Lunet docs and .NET API documentation"
-  default_prompt: "Use Lunet to scaffold, build, and document static sites with full plugin-aware guidance and API docs generation."
+  display_name: "Lunet Site Configuration"
+  short_description: "Docs-first Lunet setup for config, content, menus, plugins, and deployment"
+  default_prompt: "Use official lunet.io docs as source of truth, map the request to the full Lunet feature set, then apply minimal file-focused fixes in config.scriban, front matter, menu.yml, layouts/includes, plugin configuration, and deployment workflow."
