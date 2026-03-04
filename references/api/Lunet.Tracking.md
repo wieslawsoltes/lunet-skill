@@ -1,6 +1,6 @@
 # Lunet.Tracking Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Tracking/bin/Release/net10.0/Lunet.Tracking.dll`
+Assembly path: `src/Lunet.Tracking/bin/Release/net10.0/Lunet.Tracking.dll`
 
 Exported types: **4**
 

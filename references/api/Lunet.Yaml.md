@@ -1,6 +1,6 @@
 # Lunet.Yaml Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Yaml/bin/Release/net10.0/Lunet.Yaml.dll`
+Assembly path: `src/Lunet.Yaml/bin/Release/net10.0/Lunet.Yaml.dll`
 
 Exported types: **5**
 

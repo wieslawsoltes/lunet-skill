@@ -1,6 +1,6 @@
 # Lunet.Resources Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Resources/bin/Release/net10.0/Lunet.Resources.dll`
+Assembly path: `src/Lunet.Resources/bin/Release/net10.0/Lunet.Resources.dll`
 
 Exported types: **6**
 

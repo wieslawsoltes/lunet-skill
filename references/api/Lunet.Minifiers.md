@@ -1,6 +1,6 @@
 # Lunet.Minifiers Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.NUglify/bin/Release/net10.0/Lunet.Minifiers.dll`
+Assembly path: `src/Lunet.NUglify/bin/Release/net10.0/Lunet.Minifiers.dll`
 
 Exported types: **2**
 

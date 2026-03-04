@@ -1,6 +1,6 @@
 # Lunet.Rss Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Rss/bin/Release/net10.0/Lunet.Rss.dll`
+Assembly path: `src/Lunet.Rss/bin/Release/net10.0/Lunet.Rss.dll`
 
 Exported types: **2**
 

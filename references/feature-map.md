@@ -1,6 +1,6 @@
 # Lunet Feature Reference
 
-Generated from repository sources on 2026-03-04T18:53:49.
+Generated from repository sources on 2026-03-04T19:12:34.
 
 ## Product Features (readme.md)
 

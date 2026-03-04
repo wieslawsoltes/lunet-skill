@@ -1,6 +1,6 @@
 # Lunet.Menus Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Menus/bin/Release/net10.0/Lunet.Menus.dll`
+Assembly path: `src/Lunet.Menus/bin/Release/net10.0/Lunet.Menus.dll`
 
 Exported types: **5**
 

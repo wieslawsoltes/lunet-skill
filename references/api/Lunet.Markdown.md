@@ -1,6 +1,6 @@
 # Lunet.Markdown Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Markdig/bin/Release/net10.0/Lunet.Markdown.dll`
+Assembly path: `src/Lunet.Markdig/bin/Release/net10.0/Lunet.Markdown.dll`
 
 Exported types: **4**
 

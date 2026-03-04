@@ -1,6 +1,6 @@
 # Lunet.Json Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Json/bin/Release/net10.0/Lunet.Json.dll`
+Assembly path: `src/Lunet.Json/bin/Release/net10.0/Lunet.Json.dll`
 
 Exported types: **4**
 

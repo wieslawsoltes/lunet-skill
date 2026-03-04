@@ -1,6 +1,6 @@
 # Lunet.Toml Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Toml/bin/Release/net10.0/Lunet.Toml.dll`
+Assembly path: `src/Lunet.Toml/bin/Release/net10.0/Lunet.Toml.dll`
 
 Exported types: **4**
 

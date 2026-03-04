@@ -1,6 +1,6 @@
 # Lunet.Summarizer Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Summarizer/bin/Release/net10.0/Lunet.Summarizer.dll`
+Assembly path: `src/Lunet.Summarizer/bin/Release/net10.0/Lunet.Summarizer.dll`
 
 Exported types: **4**
 

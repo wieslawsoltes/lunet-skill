@@ -1,6 +1,6 @@
 # Lunet.Sass Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Sass/bin/Release/net10.0/Lunet.Sass.dll`
+Assembly path: `src/Lunet.Sass/bin/Release/net10.0/Lunet.Sass.dll`
 
 Exported types: **13**
 

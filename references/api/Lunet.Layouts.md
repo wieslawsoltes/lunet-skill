@@ -1,6 +1,6 @@
 # Lunet.Layouts Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Layouts/bin/Release/net10.0/Lunet.Layouts.dll`
+Assembly path: `src/Lunet.Layouts/bin/Release/net10.0/Lunet.Layouts.dll`
 
 Exported types: **6**
 

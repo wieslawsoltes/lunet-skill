@@ -1,6 +1,6 @@
 # Lunet.Api.DotNet.Extractor Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Api.DotNet.Extractor/bin/Release/netstandard2.0/Lunet.Api.DotNet.Extractor.dll`
+Assembly path: `src/Lunet.Api.DotNet.Extractor/bin/Release/netstandard2.0/Lunet.Api.DotNet.Extractor.dll`
 
 Exported types: **165**
 

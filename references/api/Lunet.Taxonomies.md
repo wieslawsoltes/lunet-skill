@@ -1,6 +1,6 @@
 # Lunet.Taxonomies Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Taxonomies/bin/Release/net10.0/Lunet.Taxonomies.dll`
+Assembly path: `src/Lunet.Taxonomies/bin/Release/net10.0/Lunet.Taxonomies.dll`
 
 Exported types: **7**
 

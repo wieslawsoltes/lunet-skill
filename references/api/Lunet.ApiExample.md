@@ -1,6 +1,6 @@
 # Lunet.ApiExample Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.ApiExample/bin/Release/net10.0/Lunet.ApiExample.dll`
+Assembly path: `src/Lunet.ApiExample/bin/Release/net10.0/Lunet.ApiExample.dll`
 
 Exported types: **34**
 

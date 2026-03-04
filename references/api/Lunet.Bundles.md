@@ -1,6 +1,6 @@
 # Lunet.Bundles Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Bundles/bin/Release/net10.0/Lunet.Bundles.dll`
+Assembly path: `src/Lunet.Bundles/bin/Release/net10.0/Lunet.Bundles.dll`
 
 Exported types: **13**
 

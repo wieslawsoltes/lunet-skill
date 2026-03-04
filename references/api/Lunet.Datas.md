@@ -1,6 +1,6 @@
 # Lunet.Datas Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Datas/bin/Release/net10.0/Lunet.Datas.dll`
+Assembly path: `src/Lunet.Datas/bin/Release/net10.0/Lunet.Datas.dll`
 
 Exported types: **6**
 

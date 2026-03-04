@@ -1,6 +1,6 @@
 # Lunet Public API Index
 
-Generated from built assemblies on 2026-03-04T18:53:49.
+Generated from built assemblies on 2026-03-04T19:12:33.
 
 - Assemblies: **29**
 - Exported types: **412**

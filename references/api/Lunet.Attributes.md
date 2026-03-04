@@ -1,6 +1,6 @@
 # Lunet.Attributes Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Attributes/bin/Release/net10.0/Lunet.Attributes.dll`
+Assembly path: `src/Lunet.Attributes/bin/Release/net10.0/Lunet.Attributes.dll`
 
 Exported types: **4**
 

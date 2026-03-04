@@ -1,6 +1,6 @@
 # Lunet.Search Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Search/bin/Release/net10.0/Lunet.Search.dll`
+Assembly path: `src/Lunet.Search/bin/Release/net10.0/Lunet.Search.dll`
 
 Exported types: **4**
 

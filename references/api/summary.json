@@ -2,203 +2,203 @@
   {
     "Name": "Lunet.Api",
     "FileName": "Lunet.Api.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Api/bin/Release/net10.0/Lunet.Api.dll",
+    "AssemblyPath": "src/Lunet.Api/bin/Release/net10.0/Lunet.Api.dll",
     "TypeCount": 3,
     "MemberCount": 3
   },
   {
     "Name": "Lunet.Api.DotNet",
     "FileName": "Lunet.Api.DotNet.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Api.DotNet/bin/Release/net10.0/Lunet.Api.DotNet.dll",
+    "AssemblyPath": "src/Lunet.Api.DotNet/bin/Release/net10.0/Lunet.Api.DotNet.dll",
     "TypeCount": 13,
     "MemberCount": 64
   },
   {
     "Name": "Lunet.Api.DotNet.Extractor",
     "FileName": "Lunet.Api.DotNet.Extractor.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Api.DotNet.Extractor/bin/Release/netstandard2.0/Lunet.Api.DotNet.Extractor.dll",
+    "AssemblyPath": "src/Lunet.Api.DotNet.Extractor/bin/Release/netstandard2.0/Lunet.Api.DotNet.Extractor.dll",
     "TypeCount": 165,
     "MemberCount": 1054
   },
   {
     "Name": "Lunet.ApiExample",
     "FileName": "Lunet.ApiExample.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.ApiExample/bin/Release/net10.0/Lunet.ApiExample.dll",
+    "AssemblyPath": "src/Lunet.ApiExample/bin/Release/net10.0/Lunet.ApiExample.dll",
     "TypeCount": 34,
     "MemberCount": 146
   },
   {
     "Name": "Lunet.Application",
     "FileName": "Lunet.Application.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Application/bin/Release/net10.0/Lunet.Application.dll",
+    "AssemblyPath": "src/Lunet.Application/bin/Release/net10.0/Lunet.Application.dll",
     "TypeCount": 1,
     "MemberCount": 5
   },
   {
     "Name": "Lunet.Attributes",
     "FileName": "Lunet.Attributes.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Attributes/bin/Release/net10.0/Lunet.Attributes.dll",
+    "AssemblyPath": "src/Lunet.Attributes/bin/Release/net10.0/Lunet.Attributes.dll",
     "TypeCount": 4,
     "MemberCount": 10
   },
   {
     "Name": "Lunet.Bundles",
     "FileName": "Lunet.Bundles.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Bundles/bin/Release/net10.0/Lunet.Bundles.dll",
+    "AssemblyPath": "src/Lunet.Bundles/bin/Release/net10.0/Lunet.Bundles.dll",
     "TypeCount": 13,
     "MemberCount": 74
   },
   {
     "Name": "Lunet.Cards",
     "FileName": "Lunet.Cards.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Cards/bin/Release/net10.0/Lunet.Cards.dll",
+    "AssemblyPath": "src/Lunet.Cards/bin/Release/net10.0/Lunet.Cards.dll",
     "TypeCount": 5,
     "MemberCount": 16
   },
   {
     "Name": "Lunet.Core",
     "FileName": "Lunet.Core.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Core/bin/Release/net10.0/Lunet.Core.dll",
+    "AssemblyPath": "src/Lunet.Core/bin/Release/net10.0/Lunet.Core.dll",
     "TypeCount": 81,
     "MemberCount": 477
   },
   {
     "Name": "Lunet.Datas",
     "FileName": "Lunet.Datas.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Datas/bin/Release/net10.0/Lunet.Datas.dll",
+    "AssemblyPath": "src/Lunet.Datas/bin/Release/net10.0/Lunet.Datas.dll",
     "TypeCount": 6,
     "MemberCount": 14
   },
   {
     "Name": "Lunet.Extends",
     "FileName": "Lunet.Extends.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Extends/bin/Release/net10.0/Lunet.Extends.dll",
+    "AssemblyPath": "src/Lunet.Extends/bin/Release/net10.0/Lunet.Extends.dll",
     "TypeCount": 3,
     "MemberCount": 14
   },
   {
     "Name": "Lunet.Json",
     "FileName": "Lunet.Json.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Json/bin/Release/net10.0/Lunet.Json.dll",
+    "AssemblyPath": "src/Lunet.Json/bin/Release/net10.0/Lunet.Json.dll",
     "TypeCount": 4,
     "MemberCount": 7
   },
   {
     "Name": "Lunet.Layouts",
     "FileName": "Lunet.Layouts.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Layouts/bin/Release/net10.0/Lunet.Layouts.dll",
+    "AssemblyPath": "src/Lunet.Layouts/bin/Release/net10.0/Lunet.Layouts.dll",
     "TypeCount": 6,
     "MemberCount": 18
   },
   {
     "Name": "Lunet.Markdown",
     "FileName": "Lunet.Markdown.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Markdig/bin/Release/net10.0/Lunet.Markdown.dll",
+    "AssemblyPath": "src/Lunet.Markdig/bin/Release/net10.0/Lunet.Markdown.dll",
     "TypeCount": 4,
     "MemberCount": 11
   },
   {
     "Name": "Lunet.Menus",
     "FileName": "Lunet.Menus.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Menus/bin/Release/net10.0/Lunet.Menus.dll",
+    "AssemblyPath": "src/Lunet.Menus/bin/Release/net10.0/Lunet.Menus.dll",
     "TypeCount": 5,
     "MemberCount": 33
   },
   {
     "Name": "Lunet.Minifiers",
     "FileName": "Lunet.Minifiers.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.NUglify/bin/Release/net10.0/Lunet.Minifiers.dll",
+    "AssemblyPath": "src/Lunet.NUglify/bin/Release/net10.0/Lunet.Minifiers.dll",
     "TypeCount": 2,
     "MemberCount": 3
   },
   {
     "Name": "Lunet.Resources",
     "FileName": "Lunet.Resources.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Resources/bin/Release/net10.0/Lunet.Resources.dll",
+    "AssemblyPath": "src/Lunet.Resources/bin/Release/net10.0/Lunet.Resources.dll",
     "TypeCount": 6,
     "MemberCount": 24
   },
   {
     "Name": "Lunet.Rss",
     "FileName": "Lunet.Rss.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Rss/bin/Release/net10.0/Lunet.Rss.dll",
+    "AssemblyPath": "src/Lunet.Rss/bin/Release/net10.0/Lunet.Rss.dll",
     "TypeCount": 2,
     "MemberCount": 3
   },
   {
     "Name": "Lunet.Sass",
     "FileName": "Lunet.Sass.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Sass/bin/Release/net10.0/Lunet.Sass.dll",
+    "AssemblyPath": "src/Lunet.Sass/bin/Release/net10.0/Lunet.Sass.dll",
     "TypeCount": 13,
     "MemberCount": 77
   },
   {
     "Name": "Lunet.Search",
     "FileName": "Lunet.Search.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Search/bin/Release/net10.0/Lunet.Search.dll",
+    "AssemblyPath": "src/Lunet.Search/bin/Release/net10.0/Lunet.Search.dll",
     "TypeCount": 4,
     "MemberCount": 23
   },
   {
     "Name": "Lunet.Server",
     "FileName": "Lunet.Server.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Server/bin/Release/net10.0/Lunet.Server.dll",
+    "AssemblyPath": "src/Lunet.Server/bin/Release/net10.0/Lunet.Server.dll",
     "TypeCount": 5,
     "MemberCount": 22
   },
   {
     "Name": "Lunet.Sitemaps",
     "FileName": "Lunet.Sitemaps.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Sitemaps/bin/Release/net10.0/Lunet.Sitemaps.dll",
+    "AssemblyPath": "src/Lunet.Sitemaps/bin/Release/net10.0/Lunet.Sitemaps.dll",
     "TypeCount": 5,
     "MemberCount": 16
   },
   {
     "Name": "Lunet.Summarizer",
     "FileName": "Lunet.Summarizer.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Summarizer/bin/Release/net10.0/Lunet.Summarizer.dll",
+    "AssemblyPath": "src/Lunet.Summarizer/bin/Release/net10.0/Lunet.Summarizer.dll",
     "TypeCount": 4,
     "MemberCount": 6
   },
   {
     "Name": "Lunet.Taxonomies",
     "FileName": "Lunet.Taxonomies.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Taxonomies/bin/Release/net10.0/Lunet.Taxonomies.dll",
+    "AssemblyPath": "src/Lunet.Taxonomies/bin/Release/net10.0/Lunet.Taxonomies.dll",
     "TypeCount": 7,
     "MemberCount": 23
   },
   {
     "Name": "Lunet.Toml",
     "FileName": "Lunet.Toml.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Toml/bin/Release/net10.0/Lunet.Toml.dll",
+    "AssemblyPath": "src/Lunet.Toml/bin/Release/net10.0/Lunet.Toml.dll",
     "TypeCount": 4,
     "MemberCount": 6
   },
   {
     "Name": "Lunet.Tracking",
     "FileName": "Lunet.Tracking.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Tracking/bin/Release/net10.0/Lunet.Tracking.dll",
+    "AssemblyPath": "src/Lunet.Tracking/bin/Release/net10.0/Lunet.Tracking.dll",
     "TypeCount": 4,
     "MemberCount": 4
   },
   {
     "Name": "Lunet.Watcher",
     "FileName": "Lunet.Watcher.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Watcher/bin/Release/net10.0/Lunet.Watcher.dll",
+    "AssemblyPath": "src/Lunet.Watcher/bin/Release/net10.0/Lunet.Watcher.dll",
     "TypeCount": 4,
     "MemberCount": 16
   },
   {
     "Name": "Lunet.Yaml",
     "FileName": "Lunet.Yaml.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Yaml/bin/Release/net10.0/Lunet.Yaml.dll",
+    "AssemblyPath": "src/Lunet.Yaml/bin/Release/net10.0/Lunet.Yaml.dll",
     "TypeCount": 5,
     "MemberCount": 11
   },
   {
     "Name": "lunet",
     "FileName": "lunet.md",
-    "AssemblyPath": "/Users/wieslawsoltes/GitHub/lunet/src/Lunet/bin/Release/net10.0/lunet.dll",
+    "AssemblyPath": "src/Lunet/bin/Release/net10.0/lunet.dll",
     "TypeCount": 0,
     "MemberCount": 0
   }

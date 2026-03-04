@@ -1,6 +1,6 @@
 # Lunet.Watcher Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Watcher/bin/Release/net10.0/Lunet.Watcher.dll`
+Assembly path: `src/Lunet.Watcher/bin/Release/net10.0/Lunet.Watcher.dll`
 
 Exported types: **4**
 

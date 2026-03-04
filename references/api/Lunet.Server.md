@@ -1,6 +1,6 @@
 # Lunet.Server Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Server/bin/Release/net10.0/Lunet.Server.dll`
+Assembly path: `src/Lunet.Server/bin/Release/net10.0/Lunet.Server.dll`
 
 Exported types: **5**
 

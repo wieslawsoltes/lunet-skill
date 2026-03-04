@@ -1,6 +1,6 @@
 # Lunet.Cards Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Cards/bin/Release/net10.0/Lunet.Cards.dll`
+Assembly path: `src/Lunet.Cards/bin/Release/net10.0/Lunet.Cards.dll`
 
 Exported types: **5**
 

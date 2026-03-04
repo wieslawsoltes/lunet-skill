@@ -1,6 +1,6 @@
 # Lunet.Sitemaps Public API
 
-Assembly path: `/Users/wieslawsoltes/GitHub/lunet/src/Lunet.Sitemaps/bin/Release/net10.0/Lunet.Sitemaps.dll`
+Assembly path: `src/Lunet.Sitemaps/bin/Release/net10.0/Lunet.Sitemaps.dll`
 
 Exported types: **5**
 

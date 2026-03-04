@@ -808,6 +808,55 @@ def _run_api_inspector(assemblies: list[Path], api_output_dir: Path) -> list[dic
     return json.loads(summary_path.read_text(encoding="utf-8"))
 
 
+def _to_repo_relative_str(path: Path, repo_root: Path) -> str:
+    try:
+        return str(path.resolve().relative_to(repo_root.resolve())).replace("\\", "/")
+    except ValueError:
+        return path.name
+
+
+def _sanitize_generated_paths(
+    repo_root: Path,
+    projects: list[ProjectInfo],
+    summary: list[dict],
+    api_dir: Path,
+) -> list[dict]:
+    repo_root_resolved = repo_root.resolve()
+    repo_root_text = str(repo_root_resolved)
+
+    per_assembly_replacements: dict[str, str] = {}
+    for item in summary:
+        raw_path = item.get("AssemblyPath")
+        if not isinstance(raw_path, str) or not raw_path:
+            continue
+        old_path = raw_path
+        new_path = _to_repo_relative_str(Path(raw_path), repo_root)
+        item["AssemblyPath"] = new_path
+        per_assembly_replacements[old_path] = new_path
+
+    project_replacements: dict[str, str] = {}
+    for project in projects:
+        project_root = project.csproj_path.parent.resolve()
+        project_replacements[str(project_root)] = _to_repo_relative_str(project_root, repo_root)
+
+    for api_file in sorted(api_dir.glob("*.md")):
+        text = _read_text(api_file)
+
+        for old_path, new_path in per_assembly_replacements.items():
+            text = text.replace(f"Assembly path: `{old_path}`", f"Assembly path: `{new_path}`")
+            text = text.replace(old_path, new_path)
+
+        for old_path, new_path in project_replacements.items():
+            text = text.replace(old_path, new_path)
+
+        # Last defensive cleanup to avoid leaking machine-local paths.
+        text = text.replace(repo_root_text, "<repo-root>")
+
+        api_file.write_text(text, encoding="utf-8")
+
+    return summary
+
+
 class TemporaryDirectoryPath:
     def __init__(self) -> None:
         self._path: Path | None = None
@@ -1069,6 +1118,7 @@ def main() -> int:
 
     summary = _run_api_inspector(assemblies, api_dir)
     summary = _apply_source_fallbacks(projects, summary, api_dir)
+    summary = _sanitize_generated_paths(repo_root, projects, summary, api_dir)
 
     # Keep API summary in sync with any fallback updates.
     (api_dir / "summary.json").write_text(
