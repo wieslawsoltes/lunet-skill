@@ -118,4 +118,5 @@ This matrix maps Lunet's public feature surface to docs and primary configuratio
 3. For new or heavily customized sites, evaluate `lunet-io/templates` first before custom layout/menu/theme implementation.
 4. Prefer configuration/file fixes over long conceptual explanations.
 5. Do not rely on local Lunet source checkout paths when giving guidance.
-6. Treat `api.dotnet` as opt-in: only deep-dive when the user asks for API docs work.
+6. For deployment, prefer the documented GitHub Actions workflow page first: https://lunet.io/docs/github-actions/
+7. Treat `api.dotnet` as opt-in: only deep-dive when the user asks for API docs work.

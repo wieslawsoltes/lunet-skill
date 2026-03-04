@@ -16,7 +16,7 @@ Prefetch-first rule:
 - [6. Content Metadata and Social/SEO Cards](#6-content-metadata-and-socialseo-cards)
 - [7. Data-Driven Pages](#7-data-driven-pages)
 - [8. .NET API Documentation Section](#8-net-api-documentation-section)
-- [9. Local Dev and Deployment](#9-local-dev-and-deployment)
+- [9. Local Dev and GitHub Actions Deployment](#9-local-dev-and-github-actions-deployment)
 
 ## 1. Template-First Site Baseline (Required)
 
@@ -153,7 +153,7 @@ Prefetch-first rule:
   - API root and namespace/member pages are generated
   - `xref:` links resolve where expected
 
-## 9. Local Dev and Deployment
+## 9. Local Dev and GitHub Actions Deployment
 
 - Goal: fast local iteration and deterministic publishing.
 - Read:
@@ -163,7 +163,7 @@ Prefetch-first rule:
   - https://lunet.io/docs/github-actions/
 - Edit:
   - commands/workflow usage
-  - optional `.github/workflows/*` deployment file
+  - `.github/workflows/*` using Lunet's documented GitHub Actions workflow as default
 - Validate:
   - `lunet serve` live reload behavior
   - production build output from `lunet build`

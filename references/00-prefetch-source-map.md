@@ -20,7 +20,7 @@ bash scripts/sync-lunet-docs.sh
 ## Generated Snapshot Manifest
 
 <!-- BEGIN GENERATED: DOC SYNC MANIFEST -->
-_Last synced (UTC): 2026-03-04T20:09:37Z_
+_Last synced (UTC): 2026-03-04T21:16:23Z_
 
 - Lunet repo commit: `39a59a58845506c90d84184022afe875c91e27db`
 - Templates repo commit: `f876c2750684e383fe719697628580a08379c5c3`

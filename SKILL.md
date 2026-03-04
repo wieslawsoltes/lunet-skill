@@ -1,6 +1,6 @@
 ---
 name: lunet-static-site-docs-and-api-docs
-description: Configure and troubleshoot Lunet static sites using docs-first workflows focused on `config.scriban`, content front matter, `menu.yml`, layouts/includes, full plugin configuration, deployment, and build/serve behavior. Use for Lunet site setup and maintenance; handle `api.dotnet` only when the user explicitly asks for API documentation features.
+description: Configure and troubleshoot Lunet static sites using docs-first workflows focused on `config.scriban`, content front matter, `menu.yml`, layouts/includes, full plugin configuration, GitHub Actions deployment, and build/serve behavior. Use for Lunet site setup and maintenance; handle `api.dotnet` only when the user explicitly asks for API documentation features.
 ---
 
 # Lunet Docs-First Site Configuration
@@ -20,6 +20,7 @@ Core references:
 - Treat the default template repo ([lunet-io/templates](https://github.com/lunet-io/templates)) as first-choice baseline for layouts/navigation/styles.
 - Use prefetched snapshots in `references/upstream/` first to avoid routine web requests.
 - Only fetch web docs when snapshots are missing/stale, or when the user explicitly asks for latest upstream behavior.
+- For deployment tasks, prefer the official [GitHub Actions guide](https://lunet.io/docs/github-actions/).
 - Prefer linking users to the exact doc section over re-explaining large blocks of knowledge.
 - Do not rely on local Lunet repository paths in guidance.
 
@@ -36,7 +37,7 @@ Core references:
 - layouts/includes/themes
 - plugin configuration (all modules listed in `references/lunet-docs-map.md`)
 - CLI/build/serve/watch behavior
-- deployment/CI (GitHub Actions)
+- deployment/CI (prefer official GitHub Actions workflow)
 - optional: `api.dotnet`
 
 3. Load prefetched docs from `references/00-prefetch-source-map.md`.
@@ -81,5 +82,6 @@ This updates `references/upstream/` and rewrites the generated manifest in `refe
 - Do not skip template-first evaluation for greenfield docs sites.
 - Do not default to deep .NET API extraction/reference work.
 - Use `api.dotnet` guidance only when user asks for API documentation generation.
+- For deployment, default to the documented GitHub Actions workflow unless user requests a different CI.
 - Prefer docs-first mapping for configuration and content tasks.
 - Avoid duplicating full Lunet docs text in responses; point to exact pages and apply them.

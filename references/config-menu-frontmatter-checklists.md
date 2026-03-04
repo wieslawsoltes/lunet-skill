@@ -11,6 +11,7 @@ Use this after opening the matching official docs pages.
 - Navigation menus: https://lunet.io/docs/plugins/menus/
 - Layouts/includes: https://lunet.io/docs/layouts-and-includes/
 - Themes/layering: https://lunet.io/docs/themes-and-extends/
+- Deployment workflow: https://lunet.io/docs/github-actions/
 
 ## Template-First Gate (Run First)
 
@@ -69,6 +70,13 @@ Use this after opening the matching official docs pages.
 - SEO/social: cards output expected head tags; summary fallback works.
 - Analytics: tracking snippet appears only in production.
 - API docs: only apply `api.dotnet` configuration when API docs are part of the request.
+
+## Deployment Checklist (GitHub Actions)
+
+- Prefer Lunet's documented GitHub Actions workflow as first deployment path.
+- Verify workflow triggers and permissions align with repository policy.
+- Confirm build path/site path matches intended Lunet site root.
+- If using custom domain, confirm CNAME/domain settings match docs guidance.
 
 ## Validation Commands
 

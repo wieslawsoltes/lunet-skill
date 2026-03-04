@@ -11,7 +11,7 @@ LUNET_REPO_DIR="${REPOS_DIR}/lunet"
 TEMPLATES_REPO_DIR="${REPOS_DIR}/templates"
 SOURCE_MAP="${SKILL_DIR}/references/00-prefetch-source-map.md"
 
-mkdir -p "${LUNET_DIR}/plugins" "${TEMPLATES_DIR}/dist" "${REPOS_DIR}"
+mkdir -p "${REPOS_DIR}"
 
 LUNET_FILES=(
   "readme.md"
@@ -67,6 +67,17 @@ sync_repo() {
 
   git clone --depth 1 --filter=blob:none --sparse "${repo_url}" "${repo_dir}"
   git -C "${repo_dir}" sparse-checkout set "${sparse_paths[@]}"
+}
+
+ensure_repo_dir_state() {
+  local repo_dir="$1"
+  if [[ -d "${repo_dir}" && ! -d "${repo_dir}/.git" ]]; then
+    if [[ -n "$(ls -A "${repo_dir}" 2>/dev/null || true)" ]]; then
+      echo "[error] ${repo_dir} exists and is not a git repository." >&2
+      echo "[error] Remove or rename this directory and rerun sync." >&2
+      exit 1
+    fi
+  fi
 }
 
 resolve_branch() {
@@ -148,6 +159,9 @@ official_url_for_template_file() {
 
 echo "Syncing Lunet docs repos into: ${REPOS_DIR}"
 
+ensure_repo_dir_state "${LUNET_REPO_DIR}"
+ensure_repo_dir_state "${TEMPLATES_REPO_DIR}"
+
 if [[ -d "${LUNET_REPO_DIR}/.git" ]]; then
   update_repo "https://github.com/lunet-io/lunet.git" "${LUNET_REPO_DIR}" \
     "site/docs" \
@@ -174,6 +188,9 @@ TEMPLATES_COMMIT="$(git -C "${TEMPLATES_REPO_DIR}" rev-parse HEAD)"
 echo "Lunet repo commit: ${LUNET_COMMIT}"
 echo "Templates repo commit: ${TEMPLATES_COMMIT}"
 echo "Materializing docs snapshots into: ${OUT_DIR}"
+
+rm -rf "${LUNET_DIR}" "${TEMPLATES_DIR}"
+mkdir -p "${LUNET_DIR}/plugins" "${TEMPLATES_DIR}/dist"
 
 for file in "${LUNET_FILES[@]}"; do
   src="${LUNET_REPO_DIR}/site/docs/${file}"

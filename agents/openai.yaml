@@ -1,4 +1,4 @@
 interface:
   display_name: "Lunet Site Configuration"
-  short_description: "Docs-first Lunet setup for config, content, menus, plugins, and deployment"
-  default_prompt: "Use prefetched local Lunet docs snapshots first (references/upstream via references/00-prefetch-source-map.md), fall back to lunet.io/templates web docs only when needed or when latest is requested, enforce template-first setup, then apply minimal file-focused fixes in config.scriban, front matter, menu.yml, plugin configuration, and deployment workflow."
+  short_description: "Docs-first Lunet setup for config, content, menus, plugins, and GitHub Actions deployment"
+  default_prompt: "Use prefetched local Lunet docs snapshots first (references/upstream via references/00-prefetch-source-map.md), fall back to web docs only when needed or when latest is requested, enforce template-first setup, default deployment guidance to lunet.io/docs/github-actions/, then apply minimal file-focused fixes in config.scriban, front matter, menu.yml, plugin configuration, and CI workflow."
